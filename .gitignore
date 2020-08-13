@@ -50,3 +50,5 @@ css/styles.css
 
 # Cache
 .cache/
+
+.DS_Store
