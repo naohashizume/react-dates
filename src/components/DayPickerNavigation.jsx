@@ -182,6 +182,7 @@ class DayPickerNavigation extends React.PureComponent {
           ) : (
             <div // eslint-disable-line jsx-a11y/interactive-supports-focus
               role="button"
+              data-testid="prevButton"
               {...navPrevTabIndex}
               {...css(
                 styles.DayPickerNavigation_button,
@@ -243,6 +244,7 @@ class DayPickerNavigation extends React.PureComponent {
           ) : (
             <div // eslint-disable-line jsx-a11y/interactive-supports-focus
               role="button"
+              data-testid="nextButton"
               {...navNextTabIndex}
               {...css(
                 styles.DayPickerNavigation_button,
