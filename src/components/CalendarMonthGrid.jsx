@@ -328,6 +328,7 @@ class CalendarMonthGrid extends React.PureComponent {
                 },
                 !isVisible && !isAnimating && styles.CalendarMonthGrid_month__hidden,
               )}
+              data-testid="calendar"
             >
               <CalendarMonth
                 month={month}

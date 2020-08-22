@@ -14,6 +14,9 @@ describe('DataRangePicker component', () => {
     cy.getIframeBody().findByTestId('nextButton').click();
     cy.getIframeBody().find('[aria-label*="September 30, 2020"]').click();
 
+    // ensure the calendar is not visible anymore
+    cy.getIframeBody().findByTestId('calendar').should('not.visible');
+
     cy.getIframeBody().findByTestId('startDate').should('have.value', '08/23/2020');
     cy.getIframeBody().findByTestId('endDate').should('have.value', '09/30/2020');
   });
